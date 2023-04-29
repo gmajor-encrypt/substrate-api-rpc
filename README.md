@@ -119,6 +119,19 @@ transactionHash, err := client.SendAuthorSubmitExtrinsic(signedTransaction)
 
 More information can be viewed https://polkadot.js.org/api/substrate/rpc.html
 
+## Test
+
+```bash
+go test ./... --cover -v 
+```
+
+Docker
+```bash
+docker build -t substrate-api-rpc .
+docker run -it substrate-api-rpc
+```
+
+
 ## Contributions
 
 We welcome contributions of any kind. Issues labeled can be good (first) contributions.
